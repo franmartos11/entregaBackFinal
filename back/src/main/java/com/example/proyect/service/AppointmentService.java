@@ -1,7 +1,7 @@
 package com.example.proyect.service;
 
-import com.example.proyect.exception.AppNoContException;
-import com.example.proyect.exception.AppNotFoundException;
+import com.example.proyect.exceptions.AppNoContException;
+import com.example.proyect.exceptions.AppNotFoundException;
 
 import com.example.proyect.model.Appointment;
 import com.example.proyect.model.AppointmentDTO;

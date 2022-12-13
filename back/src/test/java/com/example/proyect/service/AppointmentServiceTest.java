@@ -1,6 +1,6 @@
 package com.example.proyect.service;
 
-import com.example.proyect.exception.*;
+import com.example.proyect.exceptions.*;
 import com.example.proyect.model.Appointment;
 import com.example.proyect.model.AppointmentDTO;
 import com.example.proyect.model.Dentist;
@@ -37,7 +37,7 @@ class AppointmentServiceTest {
 
     @BeforeEach
     void setUp(){
-        appointmentDto = new AppointmentDTO(2F, LocalDateTime.now(),new Dentist(),new Patient());
+        appointmentDto = new AppointmentDTO(2L, LocalDateTime.now(),new Dentist(),new Patient());
         appointment = new Appointment();
 
     }
@@ -62,7 +62,7 @@ class AppointmentServiceTest {
     @DisplayName("WHEN appointment findById THEN doesnt throw exception")
     public void getByIdAppointment(){
         given(repository.findById(anyLong())).willReturn(Optional.of(appointment));
-        assertDoesNotThrow(()->service.getById(2F));
+        assertDoesNotThrow(()->service.getById(2L));
 
     }
 
@@ -70,7 +70,7 @@ class AppointmentServiceTest {
     @DisplayName("WHEN appointment findById THEN throw AppNotFoundException")
     public void getByIdDentistException(){
         given(repository.findById(anyLong())).willReturn(Optional.empty());
-        assertThrows(AppNotFoundException.class,()->service.getById(2F));
+        assertThrows(AppNotFoundException.class,()->service.getById(2L));
 
     }
 
@@ -102,7 +102,7 @@ class AppointmentServiceTest {
     @DisplayName("WHEN appointment thats not in db is deleted THEN throw AppNotFoundException")
     public void deleteByIdDentistException(){
         given(repository.findById(anyLong())).willReturn(Optional.empty());
-        assertThrows(AppNotFoundException.class,()-> service.deleteById(3D));
+        assertThrows(AppNotFoundException.class,()-> service.deleteById(3L));
 
     }
 

@@ -1,6 +1,6 @@
 package com.example.proyect.service;
 
-import com.example.proyect.exception.*;
+import com.example.proyect.exceptions.*;
 import com.example.proyect.model.Patient;
 import com.example.proyect.repository.PatientRepo;
 
@@ -38,7 +38,7 @@ class PatientServiceTest {
 
     @BeforeEach
     void setUp(){
-        patient = new Patient(2F,"Francisco","Martos","43555555", LocalDate.now(),"Ohiggins 2000",null);
+        patient = new Patient(2L,"Francisco","Martos","43555555", LocalDate.now(),"Ohiggins 2000",null);
 
     }
 
@@ -62,7 +62,7 @@ class PatientServiceTest {
     @DisplayName("WHEN patient findById THEN doesnt throw exception")
     public void getByIdPatient(){
         given(repository.findById(anyLong())).willReturn(Optional.of(patient));
-        assertDoesNotThrow(()->service.getById(2F));
+        assertDoesNotThrow(()->service.getById(2L));
 
     }
 
@@ -70,7 +70,7 @@ class PatientServiceTest {
     @DisplayName("WHEN patient findById THEN throw PatientNotFoundException")
     public void getByIdPatientException(){
         given(repository.findById(anyLong())).willReturn(Optional.empty());
-        assertThrows(PatientNotFoundException.class,()->service.getById(2F));
+        assertThrows(PatientNotFoundException.class,()->service.getById(2L));
 
     }
 
@@ -126,7 +126,7 @@ class PatientServiceTest {
     @DisplayName("WHEN  patient is deleted THEN doesnt throw exception")
     public void deleteByIdPatient(){
         given(repository.findById(anyLong())).willReturn(Optional.of(patient));
-        assertDoesNotThrow(()->service.deleteById(2F));
+        assertDoesNotThrow(()->service.deleteById(2L));
 
     }
 
@@ -134,7 +134,7 @@ class PatientServiceTest {
     @DisplayName("WHEN patient thats not in db is deleted THEN throw PatientNotFoundException")
     public void deleteByIdPatientException(){
         given(repository.findById(anyLong())).willReturn(Optional.empty());
-        assertThrows(PatientNotFoundException.class,()-> service.deleteById(3E));
+        assertThrows(PatientNotFoundException.class,()-> service.deleteById(3L));
 
     }
 

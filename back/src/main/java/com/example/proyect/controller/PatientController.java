@@ -1,7 +1,7 @@
 package com.example.proyect.controller;
 
-import com.example.proyect.exception.PatientNoContentException;
-import com.example.proyect.exception.PatientNotFoundException;
+import com.example.proyect.exceptions.PatientNoContentException;
+import com.example.proyect.exceptions.PatientNotFoundException;
 
 import com.example.proyect.model.Patient;
 import com.example.proyect.service.PatientService;

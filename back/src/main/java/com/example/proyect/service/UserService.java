@@ -1,6 +1,6 @@
 package com.example.proyect.service;
 
-import com.example.proyect.exception.*;
+import com.example.proyect.exceptions.*;
 import com.example.proyect.model.User;
 import com.example.proyect.repository.UserRepo;
 

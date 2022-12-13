@@ -1,6 +1,7 @@
 package com.example.proyect.service;
 
-import com.example.proyect.exception.*;
+import com.example.proyect.exceptions.*;
+import com.example.proyect.model.*;
 import com.example.proyect.repository.UserRepo;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -17,7 +18,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
-import static com.example.proyect.model.UserRoles.ADMIN;
+import static com.example.proyect.model.UserRoles.ADMIN_ROL;
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.ArgumentMatchers.anyLong;
@@ -36,7 +37,7 @@ class UserServiceTest {
 
     @BeforeEach
     void setUp(){
-        user = new User(2F,"Francisco","franmartos11@gmail.com","FranMartos",ADMIN_ROL);
+        user = new User(2L,"Francisco","franmartos11@gmail.com","FranMartos",ADMIN_ROL);
 
     }
 
@@ -60,7 +61,7 @@ class UserServiceTest {
     @DisplayName("WHEN bring user byId THEN doesnt throw UserNotFoundException")
     public void getByIdUser(){
         given(repository.findById(anyLong())).willReturn(Optional.of(user));
-        assertDoesNotThrow(()->service.getById(2F));
+        assertDoesNotThrow(()->service.getById(2L));
 
     }
 
@@ -68,7 +69,7 @@ class UserServiceTest {
     @DisplayName("WHEN bring user byId THEN throws UserNotFoundException")
     public void getByIdUserException(){
         given(repository.findById(anyLong())).willReturn(Optional.empty());
-        assertThrows(UserNotFoundException.class,()->service.getById(2F));
+        assertThrows(UserNotFoundException.class,()->service.getById(2L));
 
     }
 
@@ -108,7 +109,7 @@ class UserServiceTest {
     @DisplayName("WHEN user is deleted THEN doesnt throw exception")
     public void deleteByIdUser(){
         given(repository.findById(anyLong())).willReturn(Optional.of(user));
-        assertDoesNotThrow(()->service.deleteById(2F));
+        assertDoesNotThrow(()->service.deleteById(2L));
 
     }
 
@@ -116,7 +117,7 @@ class UserServiceTest {
     @DisplayName("WHEN user thats not in db is deleted THEN throw UserNotFoundException")
     public void deleteByIdUserException(){
         given(repository.findById(anyLong())).willReturn(Optional.empty());
-        assertThrows(UserNotFoundException.class,()-> service.deleteById(2E));
+        assertThrows(UserNotFoundException.class,()-> service.deleteById(2L));
 
     }
 

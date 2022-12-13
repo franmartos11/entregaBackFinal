@@ -1,8 +1,8 @@
 package com.example.proyect.service;
 
-import com.example.proyect.exception.BadRequestException;
-import com.example.proyect.exception.PatientNoContentException;
-import com.example.proyect.exception.PatientNotFoundException;
+import com.example.proyect.exceptions.BadRequestException;
+import com.example.proyect.exceptions.PatientNoContentException;
+import com.example.proyect.exceptions.PatientNotFoundException;
 
 import com.example.proyect.model.Patient;
 import com.example.proyect.repository.PatientRepo;

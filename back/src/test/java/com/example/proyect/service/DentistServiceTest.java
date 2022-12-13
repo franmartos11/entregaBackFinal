@@ -1,8 +1,8 @@
 package com.example.proyect.service;
 
-import com.example.proyect.exception.BadRequestException;
-import com.example.proyect.exception.DentistNoContException;
-import com.example.proyect.exception.DentistNotFoundException;
+import com.example.proyect.exceptions.BadRequestException;
+import com.example.proyect.exceptions.DentistNoContException;
+import com.example.proyect.exceptions.DentistNotFoundException;
 import com.example.proyect.model.Dentist;
 import com.example.proyect.repository.DentistRepo;
 
@@ -35,7 +35,7 @@ class DentistServiceTest {
 
     @BeforeEach
     void setUp(){
-        dentist = new Dentist(2F,"Francisco","Martos","DN8735",null);
+        dentist = new Dentist(2L,"Francisco","Martos","DN8735",null);
     }
 
     @Test
@@ -66,7 +66,7 @@ class DentistServiceTest {
     @DisplayName("WHEN dentist findById THEN throw DentistNotFoundException")
     public void getByIdDentistException(){
         given(repository.findById(anyLong())).willReturn(Optional.empty());
-        assertThrows(DentistNotFoundException.class,()->service.getById(2F));
+        assertThrows(DentistNotFoundException.class,()->service.getById(2L));
 
     }
 
@@ -122,7 +122,7 @@ class DentistServiceTest {
     @DisplayName("WHEN dentist is deleted THEN doesnt throw exception")
     public void deleteByIdDentist(){
         given(repository.findById(anyLong())).willReturn(Optional.of(dentist));
-        assertDoesNotThrow(()->service.deleteById(2F));
+        assertDoesNotThrow(()->service.deleteById(2L));
 
     }
 
@@ -130,7 +130,7 @@ class DentistServiceTest {
     @DisplayName("WHEN dentist thats not in db is deleted THEN throw DentistNotFoundException")
     public void deleteByIdDentistException(){
         given(repository.findById(anyLong())).willReturn(Optional.empty());
-        assertThrows(BadRequestException.class,()-> service.deleteById(3F));
+        assertThrows(BadRequestException.class,()-> service.deleteById(3L));
 
     }
 }

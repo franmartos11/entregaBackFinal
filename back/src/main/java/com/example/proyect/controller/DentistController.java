@@ -1,7 +1,7 @@
 package com.example.proyect.controller;
 
-import com.example.proyect.exception.DentistNoContException;
-import com.example.proyect.exception.DentistNotFoundException;
+import com.example.proyect.exceptions.DentistNoContException;
+import com.example.proyect.exceptions.DentistNotFoundException;
 import com.example.proyect.model.Dentist;
 import com.example.proyect.service.DentistService;
 

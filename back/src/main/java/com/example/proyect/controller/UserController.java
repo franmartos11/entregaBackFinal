@@ -1,10 +1,10 @@
 package com.example.proyect.controller;
 
-import com.example.proyect.config.jwt.JwtUtil;
-import com.example.proyect.config.jwt.model.AuthenticationRequest;
-import com.example.proyect.config.jwt.model.AuthenticationResponse;
+import com.example.proyect.security.jwt.JwtUtil;
+import com.example.proyect.security.jwt.model.AuthenticationRequest;
+import com.example.proyect.security.jwt.model.AuthenticationResponse;
 
-import com.example.proyect.exception.*;
+import com.example.proyect.exceptions.*;
 import com.example.proyect.model.User;
 import com.example.proyect.service.UserService;
 

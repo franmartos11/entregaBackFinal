@@ -1,6 +1,6 @@
-package com.example.proyect.config;
+package com.example.proyect.security;
 
-import com.example.proyect.config.jwt.JwtRequestFilter;
+import com.example.proyect.security.jwt.JwtRequestFilter;
 import com.example.proyect.service.UserService;
 
 import org.springframework.beans.factory.annotation.Autowired;
