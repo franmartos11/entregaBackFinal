@@ -1,6 +1,6 @@
-package com.example.proyectoIntegrador.exception;
+package com.example.proyect.exceptions;
 
-import com.example.proyectoIntegrador.controller.AppointmentController;
+import com.example.proyect.controller.AppointmentController;
 import lombok.AllArgsConstructor;
 
 import org.slf4j.Logger;

@@ -1,4 +1,4 @@
-package com.example.proyectoIntegrador.config;
+package com.example.proyect.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

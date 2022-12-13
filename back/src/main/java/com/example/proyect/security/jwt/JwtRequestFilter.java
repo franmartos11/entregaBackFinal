@@ -1,5 +1,5 @@
-package com.example.proyectoIntegrador.config.jwt;
-import com.example.proyectoIntegrador.service.UserService;
+package com.example.proyect.security.jwt;
+import com.example.proyect.service.UserService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

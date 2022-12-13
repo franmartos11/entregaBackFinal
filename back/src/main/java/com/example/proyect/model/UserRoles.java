@@ -1,4 +1,4 @@
-package com.example.proyectoIntegrador.model;
+package com.example.proyect.model;
 
 public enum UserRoles {
     USER_ROL,

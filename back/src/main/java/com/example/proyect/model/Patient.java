@@ -1,4 +1,4 @@
-package com.example.proyectoIntegrador.model;
+package com.example.proyect.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.sun.istack.NotNull;

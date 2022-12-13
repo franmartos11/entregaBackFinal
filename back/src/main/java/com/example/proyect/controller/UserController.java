@@ -1,12 +1,12 @@
-package com.example.proyectoIntegrador.controller;
+package com.example.proyect.controller;
 
-import com.example.proyectoIntegrador.config.jwt.JwtUtil;
-import com.example.proyectoIntegrador.config.jwt.model.AuthenticationRequest;
-import com.example.proyectoIntegrador.config.jwt.model.AuthenticationResponse;
+import com.example.proyect.config.jwt.JwtUtil;
+import com.example.proyect.config.jwt.model.AuthenticationRequest;
+import com.example.proyect.config.jwt.model.AuthenticationResponse;
 
-import com.example.proyectoIntegrador.exception.*;
-import com.example.proyectoIntegrador.model.User;
-import com.example.proyectoIntegrador.service.UserService;
+import com.example.proyect.exception.*;
+import com.example.proyect.model.User;
+import com.example.proyect.service.UserService;
 
 import lombok.AllArgsConstructor;
 

@@ -1,4 +1,4 @@
-package com.example.proyectoIntegrador.model;
+package com.example.proyect.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -36,7 +36,7 @@ public class Dentist {
     private  String lastName;
 
     @NotNull
-    @Column(name="registration",unique = true)
+    @Column(name="medicalLicense",unique = true)
     private  String medicalLicense;
 
     @OneToMany(

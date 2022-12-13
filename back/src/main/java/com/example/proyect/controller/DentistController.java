@@ -1,9 +1,9 @@
-package com.example.proyectoIntegrador.controller;
+package com.example.proyect.controller;
 
-import com.example.proyectoIntegrador.exception.DentistNoContException;
-import com.example.proyectoIntegrador.exception.DentistNotFoundException;
-import com.example.proyectoIntegrador.model.Dentist;
-import com.example.proyectoIntegrador.service.DentistService;
+import com.example.proyect.exception.DentistNoContException;
+import com.example.proyect.exception.DentistNotFoundException;
+import com.example.proyect.model.Dentist;
+import com.example.proyect.service.DentistService;
 
 import lombok.AllArgsConstructor;
 
@@ -34,9 +34,9 @@ public class DentistController {
 
     }
 
-    @GetMapping("/registration")
-    public ResponseEntity<Dentist> getByRegistration(@RequestBody String registration) throws DentistNotFoundException {
-        return ResponseEntity.ok(service.getByMedicalLicense(registration));
+    @GetMapping("/medicalLicense")
+    public ResponseEntity<Dentist> getByRegistration(@RequestBody String ml) throws DentistNotFoundException {
+        return ResponseEntity.ok(service.getByMedicalLicense(ml));
 
     }
 

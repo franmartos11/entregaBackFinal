@@ -1,5 +1,5 @@
-package com.example.proyectoIntegrador.repository;
-import com.example.proyectoIntegrador.model.Appointment;
+package com.example.proyect.repository;
+import com.example.proyect.model.Appointment;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

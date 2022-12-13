@@ -1,11 +1,11 @@
-package com.example.proyectoIntegrador.service;
+package com.example.proyect.service;
 
-import com.example.proyectoIntegrador.exception.*;
-import com.example.proyectoIntegrador.model.Appointment;
-import com.example.proyectoIntegrador.model.AppointmentDTO;
-import com.example.proyectoIntegrador.model.Dentist;
-import com.example.proyectoIntegrador.model.Patient;
-import com.example.proyectoIntegrador.repository.AppointmentRepo;
+import com.example.proyect.exception.*;
+import com.example.proyect.model.Appointment;
+import com.example.proyect.model.AppointmentDTO;
+import com.example.proyect.model.Dentist;
+import com.example.proyect.model.Patient;
+import com.example.proyect.repository.AppointmentRepo;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;

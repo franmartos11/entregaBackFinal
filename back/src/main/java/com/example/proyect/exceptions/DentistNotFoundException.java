@@ -1,4 +1,4 @@
-package com.example.proyectoIntegrador.exception;
+package com.example.proyect.exceptions;
 
 public class DentistNotFoundException extends Exception{
     public DentistNotFoundException() {

@@ -1,10 +1,10 @@
-package com.example.proyectoIntegrador.controller;
+package com.example.proyect.controller;
 
-import com.example.proyectoIntegrador.exception.PatientNoContentException;
-import com.example.proyectoIntegrador.exception.PatientNotFoundException;
+import com.example.proyect.exception.PatientNoContentException;
+import com.example.proyect.exception.PatientNotFoundException;
 
-import com.example.proyectoIntegrador.model.Patient;
-import com.example.proyectoIntegrador.service.PatientService;
+import com.example.proyect.model.Patient;
+import com.example.proyect.service.PatientService;
 
 import lombok.AllArgsConstructor;
 

@@ -1,4 +1,4 @@
-package com.example.proyectoIntegrador.config.jwt.model;
+package com.example.proyect.security.jwt.model;
 
 public class AuthenticationRequest {
 

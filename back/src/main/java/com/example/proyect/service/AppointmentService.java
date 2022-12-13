@@ -1,12 +1,12 @@
-package com.example.proyectoIntegrador.service;
+package com.example.proyect.service;
 
-import com.example.proyectoIntegrador.exception.AppNoContException;
-import com.example.proyectoIntegrador.exception.AppNotFoundException;
+import com.example.proyect.exception.AppNoContException;
+import com.example.proyect.exception.AppNotFoundException;
 
-import com.example.proyectoIntegrador.model.Appointment;
-import com.example.proyectoIntegrador.model.AppointmentDTO;
+import com.example.proyect.model.Appointment;
+import com.example.proyect.model.AppointmentDTO;
 
-import com.example.proyectoIntegrador.repository.AppointmentRepo;
+import com.example.proyect.repository.AppointmentRepo;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
 import lombok.AllArgsConstructor;

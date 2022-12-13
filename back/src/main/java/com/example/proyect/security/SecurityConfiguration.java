@@ -1,7 +1,7 @@
-package com.example.proyectoIntegrador.config;
+package com.example.proyect.config;
 
-import com.example.proyectoIntegrador.config.jwt.JwtRequestFilter;
-import com.example.proyectoIntegrador.service.UserService;
+import com.example.proyect.config.jwt.JwtRequestFilter;
+import com.example.proyect.service.UserService;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;

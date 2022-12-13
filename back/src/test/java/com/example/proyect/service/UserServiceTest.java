@@ -1,7 +1,7 @@
-package com.example.proyectoIntegrador.service;
+package com.example.proyect.service;
 
-import com.example.proyectoIntegrador.exception.*;
-import com.example.proyectoIntegrador.repository.UserRepo;
+import com.example.proyect.exception.*;
+import com.example.proyect.repository.UserRepo;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
@@ -17,7 +17,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
-import static com.example.proyectoIntegrador.model.UserRoles.ADMIN;
+import static com.example.proyect.model.UserRoles.ADMIN;
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.ArgumentMatchers.anyLong;

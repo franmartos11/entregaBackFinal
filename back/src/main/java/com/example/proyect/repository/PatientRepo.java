@@ -1,7 +1,7 @@
-package com.example.proyectoIntegrador.repository;
+package com.example.proyect.repository;
 
 
-import com.example.proyectoIntegrador.model.Patient;
+import com.example.proyect.model.Patient;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;

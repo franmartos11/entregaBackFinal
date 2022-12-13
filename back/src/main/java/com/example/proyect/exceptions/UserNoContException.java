@@ -1,4 +1,4 @@
-package com.example.proyectoIntegrador.exception;
+package com.example.proyect.exceptions;
 
 public class UserNoContException extends Exception{
     public UserNoContException() {

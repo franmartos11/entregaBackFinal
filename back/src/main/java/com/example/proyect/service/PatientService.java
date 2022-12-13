@@ -1,11 +1,11 @@
-package com.example.proyectoIntegrador.service;
+package com.example.proyect.service;
 
-import com.example.proyectoIntegrador.exception.BadRequestException;
-import com.example.proyectoIntegrador.exception.PatientNoContentException;
-import com.example.proyectoIntegrador.exception.PatientNotFoundException;
+import com.example.proyect.exception.BadRequestException;
+import com.example.proyect.exception.PatientNoContentException;
+import com.example.proyect.exception.PatientNotFoundException;
 
-import com.example.proyectoIntegrador.model.Patient;
-import com.example.proyectoIntegrador.repository.PatientRepo;
+import com.example.proyect.model.Patient;
+import com.example.proyect.repository.PatientRepo;
 
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;

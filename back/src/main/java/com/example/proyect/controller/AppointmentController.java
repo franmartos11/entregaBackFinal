@@ -1,9 +1,9 @@
-package com.example.proyectoIntegrador.controller;
+package com.example.proyect.controller;
 
-import com.example.proyectoIntegrador.exception.AppNoContException;
-import com.example.proyectoIntegrador.exception.AppNotFoundException;
-import com.example.proyectoIntegrador.model.AppointmentDTO;
-import com.example.proyectoIntegrador.service.AppointmentService;
+import com.example.proyect.exceptions.AppNoContException;
+import com.example.proyect.exceptions.AppNotFoundException;
+import com.example.proyect.model.AppointmentDTO;
+import com.example.proyect.service.AppointmentService;
 import lombok.AllArgsConstructor;
 
 import org.springframework.http.HttpStatus;

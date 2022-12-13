@@ -1,10 +1,10 @@
-package com.example.proyectoIntegrador.service;
+package com.example.proyect.service;
 
-import com.example.proyectoIntegrador.exception.BadRequestException;
-import com.example.proyectoIntegrador.exception.DentistNoContException;
-import com.example.proyectoIntegrador.exception.DentistNotFoundException;
-import com.example.proyectoIntegrador.model.Dentist;
-import com.example.proyectoIntegrador.repository.DentistRepo;
+import com.example.proyect.exception.BadRequestException;
+import com.example.proyect.exception.DentistNoContException;
+import com.example.proyect.exception.DentistNotFoundException;
+import com.example.proyect.model.Dentist;
+import com.example.proyect.repository.DentistRepo;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;

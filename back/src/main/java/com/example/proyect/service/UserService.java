@@ -1,8 +1,8 @@
-package com.example.proyectoIntegrador.service;
+package com.example.proyect.service;
 
-import com.example.proyectoIntegrador.exception.*;
-import com.example.proyectoIntegrador.model.User;
-import com.example.proyectoIntegrador.repository.UserRepo;
+import com.example.proyect.exception.*;
+import com.example.proyect.model.User;
+import com.example.proyect.repository.UserRepo;
 
 import lombok.AllArgsConstructor;
 
