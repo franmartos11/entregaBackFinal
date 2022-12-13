@@ -94,7 +94,7 @@ class AppointmentServiceTest {
     @DisplayName("WHEN appointment id deleted THEN doesnt throw exception")
     public void deleteByIdDentist(){
         given(repository.findById(anyLong())).willReturn(Optional.of(appointment));
-        assertDoesNotThrow(()->service.deleteById(2F));
+        assertDoesNotThrow(()->service.deleteById(2L));
 
     }
 

@@ -58,7 +58,7 @@ class DentistServiceTest {
     @DisplayName("WHEN dentist findById THEN doesnt throw exception")
     public void getByIdDentist(){
         given(repository.findById(anyLong())).willReturn(Optional.of(dentist));
-        assertDoesNotThrow(()->service.getById(2F));
+        assertDoesNotThrow(()->service.getById(2L));
 
     }
 
